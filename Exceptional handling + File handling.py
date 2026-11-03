@@ -40,8 +40,7 @@ except TypeError:
 
 
 # 5. RAISE
-age = int(input("Enter age: "))
-
+age = int(input("Enter age: "))
 if age < 18:
     raise ValueError("Cannot register")
 else:
@@ -85,8 +84,7 @@ f.close()
 f = open("Python.txt", "a")
 f.write("\nJoy didnt attend the class")
 f.close()
-print("Successful")
-
+print("Successful")
 f = open("Python.txt", "r")
 a = f.read()
 print(a)
@@ -106,8 +104,7 @@ f.close()
 
 # 12. FILE HANDLING USING WITH
 with open("Student.txt", "w") as f:
-    f.write("Hello")
-
+    f.write("Hello")
 with open("Student.txt", "r") as f:
     print(f.read())
 
@@ -115,8 +112,7 @@ with open("Student.txt", "r") as f:
 # 13. COUNT THE LETTERS IN THE FILE
 with open("Student.txt", "r") as f:
     a = f.read()
-    b = a.strip()
-
+    b = a.strip()
 print("Total:", len(b))
 
 
@@ -129,8 +125,7 @@ except FileNotFoundError:
 
 
 # 15. REMOVE FILE USING OS
-import os
-
+import os
 if os.path.exists("Student.txt"):
     os.remove("Student.txt")
     print("Removed")
